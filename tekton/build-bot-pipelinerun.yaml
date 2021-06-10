@@ -5,9 +5,9 @@ metadata:
 spec:
   serviceAccountName: build-bot
   pipelineRef:
-    name: linter-pipeline
+    name: wenrui-cao-buildah-pipeline
   workspaces:
-    - name: shared-workspace
+    - name: pipeline-shared-data
       volumeClaimTemplate:
         spec:
           accessModes:
