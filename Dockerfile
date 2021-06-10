@@ -1,4 +1,4 @@
-FROM quay.io/ibmgaragecloud/node
+FROM quay.io/jeffdean/node-alpine
 
 EXPOSE 3000
 WORKDIR /app

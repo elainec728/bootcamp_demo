@@ -1,0 +1,12 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: wenrui-cao-buildah-pipeline-run
+spec:
+  pipelineRef:
+    name: wenrui-cao-buildah-pipeline
+  workspaces:
+    - name: pipeline-shared-data
+      persistentvolumeclaim:
+        claimName: wenrui-cao-pvc
